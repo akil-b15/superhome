@@ -63,7 +63,82 @@
 
 </div>
 <!--- Image Slider -->
+<div class="container-fluid carousel" data-ride="carousel" id="home">
 
+	<div class="carousel-inner">
+		<div class="carousel-item active">
+			<img src="img/neways/back12.jpg"  onclick="closeNav()">
+			<div class="carousel-caption">
+				<h1 class="display-2 fade-in">Super Home BD</h1>
+
+				<a target="_blank">
+					<button type="button" class="btn btn-outline-light btn-lg fade-in" onclick="openNav()">BOOKING</button>
+				</a>
+				<a href="#booking">
+					<button type="button" class="btn btn-primary btn-lg fade-in" style="background:#d4e157">PACKAGES</button>
+				</a>
+			</div>
+		</div>
+
+	</div>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="z-index:1">&times;</a>
+        <div class="container-fluid">
+        	<div class="container-fluid pt-5">
+                <form action="prebook_form.php" method="post">
+                    <input type="hidden" name="from_pkg_pln">
+
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row" id="branchName">
+                                        <div class="col-md-3">
+                                            <label style="float: left;" for="exampleInputEmail1"><h4>Branches</h4></label>
+                                            <div id="selected_dropdown_toggle" style="float: right; display: none;"><i class="fa fa-bars" aria-hidden="true"></i></div>
+                                        </div>
+                                        <div id="selected_dropdown" style="display: none;" class="col-md-9">
+                                        </div>
+                                        <div class="col-md-9" id="hide_dropdown">
+                                          <?php
+                                          while($branch = mysqli_fetch_array($branches)){
+                                          ?>
+                                                    <button type="button" id="branch_btn" class="button branch" value="<?php echo $branch['branch_id'] ; ?>"><small><?php echo $branch['branch_name'] ; ?></small><br>
+                                                        <?php
+                                                            $branchLocal = '';
+                                                            if(strtolower($branch['branch_name']) === 'super home 4'){
+                                                                $branchLocal = $branch['branch_location'].' (Female)';
+                                                            }else{
+                                                                $branchLocal = $branch['branch_location'] .' (Male)';
+                                                            }
+                                                            echo $branchLocal;
+                                                            ?></button>
+                                                <?php  }?>
+                                        </div>
+                                    </div>
+                                    <div class="row" id="package">
+
+                                    </div>
+                                    <div class="row" id="packageName">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="form-group" id="packageDetails">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!---End Image Slider -->
 
 <!--- Footer -->
 <footer id="about">
