@@ -140,6 +140,22 @@
 
 <!---End Image Slider -->
 
+<!---Welcome -->
+<div class="container padding fade-in" id="packages">
+	<div class="welcome text-center">
+		<div class="col-12 mt-3">
+			<h1 class="display-4">WELCOME</h1>
+		</div>
+
+		<hr>
+		<!-- <div class="container">
+			<p class="lead">Take A Look
+            </p>
+		</div> -->
+	</div>
+</div>
+<!---End Welcome -->
+
 <!--- Footer -->
 <footer id="about">
     <div class="container padding">
