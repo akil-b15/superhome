@@ -156,6 +156,55 @@
 </div>
 <!---End Welcome -->
 
+<!--------slide------------>
+<div class="container" id="home">
+    <div class="row justify-content-center" style="padding-top:30px;background:#f9fbe7">
+        <label for="radio1" class="manual-btn active">First Class</label>
+        <label for="radio2" class="manual-btn">Business Class</label>
+        <label for="radio3" class="manual-btn">Standard Class</label>
+    </div>
+    <div class="row">
+        <div class="col-12" style="background:#f9fbe7">
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <div class="flx">
+                        <div class="slide1 first" style="display:inherit">
+                          <img src="img/neways/firstclass.jpg" alt="">
+                        </div>
+                        <div class="slide1">
+                          <img src="img/neways/businessclass.jpg" alt="">
+                        </div>
+                        <div class="slide1">
+                          <img src="img/neways/standardclass.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="row flx">
+                        <div class="slide2 first sl1" >
+                            <h1>First Class</h1>
+                        </div>
+                        <div class="slide2 sl2">
+                            <h1>Business Class</h1>
+                        </div>
+                        <div class="slide2 sl3">
+                            <h1>Standard Class</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="d-flex justify-content-center popup">
+                        <button class="button1" onclick="return view_modal0()">Learn More</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!--- Footer -->
 <footer id="about">
     <div class="container padding">
