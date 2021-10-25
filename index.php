@@ -205,6 +205,85 @@
     </div>
 </div>
 
+<div id="modal-container" class="view_modal0" style="margin-left:0%">
+    <div class="modal-background">
+        <div class="modal modald" style="overflow:scroll">
+            <!-- <div class="row"> -->
+                <div class="col-sm-12">
+                    <button onclick="return view_modal0(1)" type="button"  style="float:right;font-size:35px;cursor:pointer;color:#afb42b;background:rgba(230, 238, 156, 1)">
+                        <i class="fas fa-times-circle"></i>
+                    </button>
+                    <!-- <div class="col-sm-12">
+                        <h1 style = "text-align:center;">All class</h1> -->
+                    <div class="row col-12" style="position:absolute; top: 60px;text-align:left; word-wrap: break-word; margin: 10px, font-style:bold">
+                        <div class="col-md-4 col-12" style="margin-left: px;background: #fafafa;border-radius: 10px;">
+                            <h1>First Class</h1>
+                            <h2>BDT 9999 monthly</h2>
+                            <h2 style="line-height:35px">3 Times Hot Meal <br> AC Room<br> Personal Locker & Luxurious Lobby <br> Laundry & Cleaning Services <br> Electric Clothes Dryer & Hair Dryer <br>
+                                GYM & Cricket Playing Zone <br>
+                                Finger Print Entrance <br> CCTV Camera & 24 Hours Security <br>
+                                Reading Room & Reading Lamp (Bed) <br>
+                                Wi-Fi Services & USB Socket <br>
+                                Multi-functional Bed <br>
+                                RO System (Purified Water) <br>
+                                Smart LED TV(65″) <br>
+                                Generator & Fire Safety<br>
+                                Bed, Bedsit, Pillow & Pillow Cover<br>
+                                Auto Shoe Polisher & Shoe Shelf<br>
+                                Lift Service Available<br>
+                                *Conditional Apply<br>
+                            </h2>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <h1>Business Class</h1>
+                            <h2>BDT 8999 monthly</h2>
+                            <h2 style="line-height:35px">3 Times Hot Meal <br> AC Room<br> Personal Locker & Luxurious Lobby <br> Laundry & Cleaning Services <br> Electric Clothes Dryer & Hair Dryer <br>
+                                GYM & Cricket Playing Zone <br>
+                                Finger Print Entrance <br> CCTV Camera & 24 Hours Security <br>
+                                Reading Room & Reading Lamp (Bed) <br>
+                                Wi-Fi Services & USB Socket <br>
+                                Multi-functional Bed <br>
+                                RO System (Purified Water) <br>
+                                Smart LED TV(65″) <br>
+                                Generator & Fire Safety<br>
+                                Bed, Bedsit, Pillow & Pillow Cover<br>
+                                Auto Shoe Polisher & Shoe Shelf<br>
+                                Lift Service Available<br>
+                                *Conditional Apply<br>
+                            </h2>
+                        </div>
+                        <div class="col-md-4 col-12"style="margin-left: px;background: #fafafa;border-radius: 10px;">
+                            <h1>Standard Class</h1>
+                            <h2>BDT 7999 monthly</h2>
+                            <h2 style="line-height:35px">3 Times Hot Meal <br> AC Room<br> Personal Locker & Luxurious Lobby <br> Laundry & Cleaning Services <br> Electric Clothes Dryer & Hair Dryer <br>
+                                GYM & Cricket Playing Zone <br>
+                                Finger Print Entrance <br> CCTV Camera & 24 Hours Security <br>
+                                Reading Room & Reading Lamp (Bed) <br>
+                                Wi-Fi Services & USB Socket <br>
+                                Multi-functional Bed <br>
+                                RO System (Purified Water) <br>
+                                Smart LED TV(65″) <br>
+                                Generator & Fire Safety<br>
+                                Bed, Bedsit, Pillow & Pillow Cover<br>
+                                Auto Shoe Polisher & Shoe Shelf<br>
+                                No Lift Service<br>
+                                *Conditional Apply<br>
+                            </h2>
+                        </div>
+                        <!-- </div> -->
+                    </div>
+
+
+                    <!-- </div> -->
+
+                </div>
+            <!-- </div>-->
+        </div>
+    </div>
+</div>
+
+<!--------End Slide-------->
+
 <!--- Footer -->
 <footer id="about">
     <div class="container padding">
