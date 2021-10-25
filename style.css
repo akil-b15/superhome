@@ -330,7 +330,7 @@ html, body {
   padding:10px;
   position: fixed;
   color: #fafafa;
-  height: 700px;
+  /* height: 700px; */
   width: 60%;
   right: 20%;
   left: 20%;

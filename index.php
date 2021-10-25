@@ -53,7 +53,7 @@
         <div class="">
             <h6 class="fixtop5 text-center polaroid" id="fixtop5">
             <a href="javascript:void(0)" class="closebtn" onclick="closepop()"><i class="fa fa-chevron-circle-down"  style="font-size:24px;" aria-hidden="true"></i></a><br>
-                <img src="img/neways/pack.jpg" style="width:100%; margin-top:10%" alt="">
+                <img src="img/neways/pack.jpg" style="width:100%; margin-top:5%" alt="">
             </h6>
         </div>
         <div class="">
