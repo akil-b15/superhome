@@ -255,20 +255,7 @@
                         <div class="col-md-4 col-12"style="margin-left: px;background: #fafafa;border-radius: 10px;">
                             <h1>Standard Class</h1>
                             <h2>BDT 7999 monthly</h2>
-                            <h2 style="line-height:35px">3 Times Hot Meal <br> AC Room<br> Personal Locker & Luxurious Lobby <br> Laundry & Cleaning Services <br> Electric Clothes Dryer & Hair Dryer <br>
-                                GYM & Cricket Playing Zone <br>
-                                Finger Print Entrance <br> CCTV Camera & 24 Hours Security <br>
-                                Reading Room & Reading Lamp (Bed) <br>
-                                Wi-Fi Services & USB Socket <br>
-                                Multi-functional Bed <br>
-                                RO System (Purified Water) <br>
-                                Smart LED TV(65″) <br>
-                                Generator & Fire Safety<br>
-                                Bed, Bedsit, Pillow & Pillow Cover<br>
-                                Auto Shoe Polisher & Shoe Shelf<br>
-                                No Lift Service<br>
-                                *Conditional Apply<br>
-                            </h2>
+                            
                         </div>
                         <!-- </div> -->
                     </div>
