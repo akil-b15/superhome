@@ -51,3 +51,18 @@ faders.forEach(fader => {
 sliders.forEach(slider => {
   appearOnScroll.observe(slider);
 });
+
+
+
+function openNav() {
+    document.getElementById("mySidebar").style.width = "90%";
+    document.getElementById("mySidebar").style.backgroundColor = "rgba(250,250,250,0.9)";
+
+    // document.getElementById("body").style.overflow-y = hidden;
+    // document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    // document.getElementById("main").style.marginLeft= "0";
+}

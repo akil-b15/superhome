@@ -284,6 +284,70 @@
 
 <!--------End Slide-------->
 
+<!-- Facilities -->
+<div class="container mt-3" id="facilities">
+
+    <div id="packages">
+        <div class="welcome text-center">
+            <div class="col-12">
+                <h5 class="display-4">Facilities</h5>
+            </div>
+
+            <hr>
+            <!-- <div class="col-12">
+                <p class="lead"></p>
+            </div> -->
+        </div>
+    </div>
+    <div class="row col-md-12" style="margin-left: 15px">
+        <div class="row col-md-6">
+            <div class="col-md-4 col-4 pos slide-in from-left" style="text-align: right">
+                <h3>Multi-functional Bed with personal locker</h3>
+            </div>
+            <div class="col-md-8 col-8">
+                <img src="img/home/bed.jpg" class="img-fluid slide-in from-left">
+            </div>
+            <div class="col-md-8 col-8 slide-in from-right" style="text-align: right">
+                <img src="img/home/dining.jpg" class="img-fluid">
+            </div>
+            <div class="col-md-4 col-4 pos slide-in from-right">
+                <h3>3 Times Meal</h3>
+            </div>
+            <div class="col-md-4 col-4 pos slide-in from-left" style="text-align: right">
+                <h3>Luxarious Lobby</h3>
+            </div>
+            <div class="col-md-8 col-8">
+                <img src="img/home/lobby8.jpg" class="img-fluid slide-in from-left">
+            </div>
+        </div>
+        <div class="row col-md-6">
+
+            <div class="col-md-4 col-4 pos slide-in from-left" style="text-align: right">
+                <h3>Reading Room</h3>
+            </div>
+            <div class="col-md-8 col-8">
+                <img src="img/home/reading.jpg" class="img-fluid slide-in from-left">
+            </div>
+            <div class="col-md-8 col-8">
+                <img src="img/home/sports.jpg" class="img-fluid slide-in from-right">
+            </div>
+            <div class="col-md-4 col-4 pos slide-in from-right" style="text-align: left">
+                <h3>Playing Zone</h3>
+            </div>
+            <div class="col-md-4 col-4 pos slide-in from-left" style="text-align: right">
+                <h3>Gym</h3>
+            </div>
+            <div class="col-md-8 col-8 slide-in from-left" style="text-align: right">
+                <img src="img/home/gym.jpg" class="img-fluid">
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+<!-- End Facilities -->
+
 <!--- Footer -->
 <footer id="about">
     <div class="container padding">
