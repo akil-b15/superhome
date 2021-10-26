@@ -66,3 +66,7 @@ function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
     // document.getElementById("main").style.marginLeft= "0";
 }
+function show(){
+  document.getElementById("fixtop2").style.opacity = .8;
+  document.getElementById("fixtop1").style.opacity = 0;
+}

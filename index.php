@@ -348,6 +348,136 @@
 </div>
 <!-- End Facilities -->
 
+<!-- Noteworthy Facilities -->
+<section class="parallaxm mb-3">
+    <div class="parallax-innerm"  style="backdrop-filter: blur(20px);">
+        <div class="container" id="facilities">
+            <div class="welcome text-center">
+                <div class="col-12 fade-in">
+                    <h2>Our Noteworthy Facilities</h5>
+                </div>
+                <hr>
+            </div>
+        </div>
+        <div class="row fade-in padding-facility">
+            <!-- <div class="row col-md-2 col-sm-2 col-6" style="background-color:#afb42b; border-radius:5px;color:#fafafa;margin-right:2px">
+                <h8 class="display-4">Air Condition</h8><br>
+                <img class="width-95-px" src="icon/g.png" alt="24hour"><br>
+
+            </div> -->
+            <div class="col-md-2 col-sm-2 col-6">
+                <div class="card boxx polaroid h-100">
+                    <img class="card-img-top" src="img/icon/ac.png" style="opacity: 0.9;" alt="Card image cap">
+                    <div class="br-c-body">
+                        <h5 style="font-size:80%;font-weight: bold;" class="card-title">Air Condition</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-2 col-6">
+                <div class="card boxx polaroid h-100">
+                    <img class="card-img-top" src="img/icon/cctv1.png" style="opacity: 0.9;" alt="Card image cap">
+                    <div class="br-c-body">
+                        <h5 style="font-size:80%;font-weight: bold;" class="card-title">24 Hours Security</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-2 col-6">
+                <div class="card boxx polaroid h-100">
+                    <img class="card-img-top" src="img/icon/gym.png" style="opacity: 0.9;" alt="Card image cap">
+                    <div class="br-c-body">
+                        <h5 style="font-size:80%;font-weight: bold;" class="card-title">GYM</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-2 col-6">
+                <div class="card boxx polaroid h-100">
+                    <img class="card-img-top" src="img/icon/hairdryer.png" style="opacity: 0.9;" alt="Card image cap">
+                    <div class="br-c-body">
+                        <h5 style="font-size:80%;font-weight: bold;" class="card-title">Hair Dryer</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-2 col-6">
+                <div class="card boxx polaroid h-100">
+                    <img class="card-img-top" src="img/icon/wifi.png" style="opacity: 0.9;" alt="Card image cap">
+                    <div class="br-c-body">
+                        <h5 style="font-size:80%;font-weight: bold;" class="card-title">Wi-Fi</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-2 col-6">
+                <div class="card boxx polaroid h-100">
+                    <img class="card-img-top" src="img/icon/fingeraccess.png" style="opacity: 0.9;" alt="Card image cap">
+                    <div class="br-c-body">
+                        <h5 style="font-size:80%;font-weight: bold;" class="card-title">Finger Print Entrance</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-2 col-6">
+                <div class="card boxx polaroid h-100">
+                    <img class="card-img-top" src="img/icon/firesafe.png" style="opacity: 0.9;" alt="Card image cap">
+                    <div class="br-c-body">
+                        <h5 style="font-size:80%;font-weight: bold;" class="card-title">Fire Safety</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-2 col-6">
+                <div class="card boxx polaroid h-100">
+                    <img class="card-img-top" src="img/icon/washingmachine.png" style="opacity: 0.9;" alt="Card image cap">
+                    <div class="br-c-body">
+                        <h5 style="font-size:80%;font-weight: bold;" class="card-title">Washing Machine</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-2 col-6">
+                <div class="card boxx polaroid h-100">
+                    <img class="card-img-top" src="img/icon/smarttv.png" style="opacity: 0.9;" alt="Card image cap">
+                    <div class="br-c-body">
+                        <h5 style="font-size:80%;font-weight: bold;" class="card-title">Smart TV</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-2 col-6">
+                <div class="card boxx polaroid h-100">
+                    <img class="card-img-top" src="img/icon/generator.png" style="opacity: 0.9;" alt="Card image cap">
+                    <div class="br-c-body">
+                        <h5 style="font-size:80%;font-weight: bold;" class="card-title">Generator</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-2 col-6">
+                <div class="card boxx polaroid h-100">
+                    <img class="card-img-top" src="img/icon/shoepolisher.png" style="opacity: 0.9;" alt="Card image cap">
+                    <div class="br-c-body">
+                        <h5 style="font-size:80%;font-weight: bold;" class="card-title">Shoe Polish</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-2 col-6">
+                <div class="card boxx polaroid h-100">
+                    <img class="card-img-top" src="img/icon/housekeeing.png" style="opacity: 0.9;" alt="Card image cap">
+                    <div class="br-c-body">
+                        <h5 style="font-size:80%;font-weight: bold;" class="card-title">Cleaning Service</h5>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End Noteworthy Facilities -->
+
 <!--- Footer -->
 <footer id="about">
     <div class="container padding">
