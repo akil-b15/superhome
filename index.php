@@ -348,6 +348,131 @@
 </div>
 <!-- End Facilities -->
 
+<!-- unused -->
+<!-- <div class="container" id="packages">
+	<div class="welcome text-center">
+		<div class="col-12 fade-in">
+			<h6 class="display-4">Other Facilities We Offer For Free</h6>
+		</div>
+		<hr>
+	</div>
+</div>
+<div class="row col-12 padding fade-in" style="text-align:center;padding-left:20%;padding-right:20%">
+    <div class="col-md-2 col-sm-2 col-6">
+        <img class="width-95-px" src="img/icon/ac.png" alt="24hour"><br>
+        <h8 class="display-4">Air Condition</h8>
+    </div>
+    <div class="col-md-2 col-sm-2 col-6">
+        <img class="width-95-px" src="img/icon/cctv.png" alt="24hour"><br>
+        <h8 class="display-4">24 Hours Security</h8>
+    </div>
+    <div class="col-md-2 col-sm-2 col-6">
+        <img class="width-95-px" src="img/icon/gym.png" alt="24hour"><br>
+        <h8 class="display-4">GYM</h8>
+    </div>
+    <div class="col-md-2 col-sm-2 col-6">
+        <img class="width-95-px" src="img/icon/hairdryer.png" alt="24hour"><br>
+        <h8 class="display-4">Hair Dryer</h8>
+    </div>
+    <div class="col-md-2 col-sm-2 col-6">
+    <img class="width-95-px" src="img/icon/wifi.png" alt="24hour"><br>
+        <h8 class="display-4">Wi-Fi</h8>
+    </div>
+    <div class="col-md-2 col-sm-2 col-6">
+        <i class="fas fa-fingerprint" style="font-size:65px;color:#afb42b" aria-hidden="true"></i><br>
+        <h8 class="display-4">Finger Print Entrance</h8>
+    </div>
+    <div class="col-md-2 col-sm-2 col-6">
+        <i class="fa fa-fire-extinguisher" style="font-size:65px;color:#afb42b" aria-hidden="true"></i><br>
+        <h8 class="display-4">Fire Safety</h8>
+    </div>
+    <div class="col-md-2 col-sm-2 col-6">
+    <img class="width-95-px" src="img/icon/washingmachine.png" alt="24hour"><br>
+        <h8 class="display-4">Washing Machine</h8>
+    </div>
+    <div class="col-md-2 col-sm-2 col-6">
+    <img class="width-95-px" src="img/icon/smarttv.png" alt="24hour"><br>
+        <h8 class="display-4">Smart TV</h8>
+    </div>
+    <div class="col-md-2 col-sm-2 col-6">
+    <img class="width-95-px" src="img/icon/generator.png" alt="24hour"><br>
+        <h8 class="display-4">Generator</h8>
+    </div>
+    <div class="col-md-2 col-sm-2 col-6">
+    <img class="width-95-px" src="img/icon/shoepolisher.png" alt="24hour"><br>
+        <h8 class="display-4">Shoe Polish</h8>
+    </div>
+    <div class="col-md-2 col-sm-2 col-6">
+    <img class="width-95-px" src="img/icon/housekeeing.png" alt="24hour"><br>
+        <h8 class="display-4">Cleaning Service</h8>
+    </div>
+
+
+</div> -->
+
+<hr class="my-4">
+<!---End Facilities -->
+<!--- About US -->
+<!--
+<div class="container" id="booking">
+	<div class="welcome text-center">
+		<div class="col-12 fade-in">
+			<h1 class="display-4">OUR TOP MANAGEMENT</h1>
+		</div>
+		<hr>
+	</div>
+
+    <div class="row text-center fade-in">
+        <div class="col-md-4 mb-2">
+            <div>
+                <img class="card-img-top feature-img" src="img/home/mr-zhang-li-guang-min.jpg" alt="Card image" style="border-radius:3%">
+                <div class="card-body">
+                <h3 class="card-title mb-3">
+                    Mr. Zhang Li Guang
+                </h3>
+                <h4>Managing Director</h4>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-4 mb-2">
+            <div>
+                <img class="card-img-top feature-img" src="img/home/mr-zhang-zhimin.jpg" alt="Card image" style="border-radius:3%">
+                <div class="card-body">
+                <h3 class="card-title mb-3">
+                    Mr. Zhang Zhimin
+                </h3>
+                <h4>Chief Operating Officer</h4>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-4 mb-2">
+            <div>
+                <img class="card-img-top feature-img" src="img/home/jolin-min.jpg" alt="Card image" style="border-radius:3%">
+                <div class="card-body">
+                    <h3 class="card-title mb-3">
+                        Zhang Rui Ling
+                    </h3>
+                    <h4>Head of Supply Chain Management</h4>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div> -->
+
+<!--- End About Us -->
+<!--- Fixed background -->
+<!-- <figure>
+	<div class="fixed-wrap">
+		<div id="fixed">
+
+		</div>
+	</div>
+</figure> -->
+<!-- end unused -->
+
 <!-- Noteworthy Facilities -->
 <section class="parallaxm mb-3">
     <div class="parallax-innerm"  style="backdrop-filter: blur(20px);">
