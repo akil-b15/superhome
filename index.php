@@ -603,7 +603,7 @@
 </section>
 <!--End Noteworthy Facilities -->
 
-<!---Booking -->
+<!---Packages -->
 <div class="container padding mb-5" id="booking" style="padding-left:50px; padding-right:50px">
 	<div class="row welcome text-center">
 		<div class="col-12 fade-in mt-4">
@@ -636,7 +636,7 @@ while($package_inf = mysqli_fetch_array($packages_info)){
 
 
 </div>
-<!---END Booking -->
+<!---END Packages -->
 
 <!--- Footer -->
 <footer id="about">
