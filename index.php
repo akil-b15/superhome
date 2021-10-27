@@ -603,6 +603,41 @@
 </section>
 <!--End Noteworthy Facilities -->
 
+<!---Booking -->
+<div class="container padding mb-5" id="booking" style="padding-left:50px; padding-right:50px">
+	<div class="row welcome text-center">
+		<div class="col-12 fade-in mt-4">
+			<h1 class="display-4">Beds We Provide</h1>
+		</div>
+
+	</div>
+
+    <div class="row fade-in transf justify-content-center text-center">
+<?php
+while($package_inf = mysqli_fetch_array($packages_info)){
+?>
+        <div class="col-md-4 mb-2">
+            <div class="card">
+                <img class="card-img-top feature-img" src="img/bed/<?php  echo $package_inf['image'] ; ?>" alt="Card image">
+
+                <div class="card-body">
+                    <h3 class="card-title mb-3">
+                        <?php  echo "<p>".$package_inf['name']."</p>" ; ?>
+                    </h3>
+                    <!-- <a href="booking.php"> Learn More </a><br> -->
+
+                </div>
+            </div>
+
+        </div>
+<?php } ?>
+
+    </div>
+
+
+</div>
+<!---END Booking -->
+
 <!--- Footer -->
 <footer id="about">
     <div class="container padding">
