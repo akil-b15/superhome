@@ -70,3 +70,12 @@ function show(){
   document.getElementById("fixtop2").style.opacity = .8;
   document.getElementById("fixtop1").style.opacity = 0;
 }
+function close1(){
+  document.getElementById("fixtop2").style.opacity = 0;
+  document.getElementById("fixtop1").style.opacity = .4;
+}
+function closepop(){
+  document.getElementById("fixtop5").style.opacity = 0;
+  document.getElementById("fixtop5").style.zIndex = -1;
+  // document.getElementById("fixtop1").style.opacity = .4;
+}

@@ -30,6 +30,7 @@
 <!-- menu  -->
 <div >
     <div class="container-fluid row">
+      <!-- Right nav fixtop -->
         <div class="">
             <h6 class="fixtop2 text-center" id="fixtop2">
                 <img src="img/home/logo.png" style="width:70px;background:#f9fbe7;padding:10px;border-radius:10px" class="mb-3 mt-3 "alt=""><br>
@@ -41,6 +42,7 @@
                 <a href="javascript:void(0)" class="closebtn" onclick="close1()"><i class="fa fa-chevron-circle-down"  style="font-size:24px;" aria-hidden="true"></i></a><br>
             </h6>
         </div>
+        <!-- social media fixtop -->
         <div class="">
             <h6 class="fixtop3 hides text-center polaroid" id="fixtop3">
 
@@ -50,12 +52,14 @@
                 <a href="https://www.instagram.com/superhomebd/" target="_blank"><i class="fab fa-instagram" style="font-size:28px;;padding-top:30px;padding-bottom:30px"></i></i><p></p></a>
             </h6>
         </div>
+        <!-- first add fixtop -->
         <div class="">
             <h6 class="fixtop5 text-center polaroid" id="fixtop5">
             <a href="javascript:void(0)" class="closebtn" onclick="closepop()"><i class="fa fa-chevron-circle-down"  style="font-size:24px;" aria-hidden="true"></i></a><br>
                 <img src="img/neways/pack.jpg" style="width:100%; margin-top:5%" alt="">
             </h6>
         </div>
+        <!-- hidden button fixtop -->
         <div class="">
             <h1 class="fixtop1" id="fixtop1" onclick="show()"><i class="fa fa-chevron-circle-up"></i></h1>
         </div>
