@@ -638,6 +638,68 @@ while($package_inf = mysqli_fetch_array($packages_info)){
 </div>
 <!---END Packages -->
 
+<!-- Media Coverage -->
+<div class="container mb-5" style="background:#f0f4c3">
+  <div class="row welcome text-center">
+  		<div class="col-12 fade-in mt-4">
+  			<h1 class="display-4">On Top Media Coverage</h1>
+  		</div>
+
+  </div>
+  <div class="container mb-5">
+      <div class="row justify-content-center text-center">
+          <div class="col-md-2 col-sm-2 col-6">
+              <a href="https://www.prothomalo.com/business/%E0%A6%AC%E0%A6%BE%E0%A6%A1%E0%A7%8D%E0%A6%A1%E0%A6%BE%E0%A7%9F-%E0%A6%B8%E0%A7%81%E0%A6%AA%E0%A6%BE%E0%A6%B0-%E0%A6%B9%E0%A7%8B%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A7%87%E0%A6%B2-%E0%A6%AC%E0%A6%BF%E0%A6%A1%E0%A6%BF%E0%A6%B0-%E0%A6%A8%E0%A6%A4%E0%A7%81%E0%A6%A8-%E0%A6%B6%E0%A6%BE%E0%A6%96%E0%A6%BE" target="_blank">
+              <img class="media2" src="img/media/pothomalo.jpg" alt="">
+              <h5>Prothom Alo</h5></a>
+          </div>
+          <div class="col-md-2 col-sm-2 col-6">
+              <a href="https://www.ekushey-tv.com/%E0%A6%AC%E0%A6%BE%E0%A6%A1%E0%A7%8D%E0%A6%A1%E0%A6%BE%E0%A7%9F-%E0%A6%89%E0%A6%A6%E0%A7%8D%E0%A6%AD%E0%A7%8B%E0%A6%A7%E0%A6%A8-%E0%A6%B9%E0%A6%B2-%E0%A6%B8%E0%A7%81%E0%A6%AA%E0%A6%BE%E0%A6%B0-%E0%A6%B9%E0%A7%8B%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A7%87%E0%A6%B2-%E0%A6%AC%E0%A6%BF%E0%A6%A1%E0%A6%BF%E0%A6%B0-%E0%A7%AD%E0%A6%AE-%E0%A6%B6%E0%A6%BE%E0%A6%96%E0%A6%BE/75178" target="_blank">
+              <img class="media2" src="img/media/ekusheye.jpg" alt="">
+              <h5>Ekushey TV</h5></a>
+          </div>
+          <div class="col-md-2 col-sm-2 col-6">
+              <a href="https://www.somoynews.tv/pages/details/178728?fbclid=IwAR2CfXUGPD9YeJUe_4SlbUUpbVUkuchsp6wEbJMUNzNuhyRdO9TV0RybiyE." target="_blank">
+              <img class="media2" src="img/media/somoy.jpg" alt="">
+              <h5>Somoy News</h5></a>
+          </div>
+          <div class="col-md-2 col-sm-2 col-6">
+              <a href="https://www.thedailystar.net/business/news/housing-problem-china-firm-build-100-hostels-dhaka-1806751" target="_blank">
+              <img class="media2" src="img/media/dailystar.jpg">
+              <h5>The Daily Star</h5></a>
+          </div>
+          <div class="col-md-2 col-sm-2 col-6">
+              <a href="https://www.dailyjanakantha.com/details/article/438833/%E0%A6%AC%E0%A6%BE%E0%A6%A1%E0%A7%8D%E0%A6%A1%E0%A6%BE%E0%A7%9F-%E0%A6%89%E0%A6%A6%E0%A7%8D%E0%A6%AD%E0%A7%8B%E0%A6%A7%E0%A6%A8-%E0%A6%B9%E0%A6%B2-%E0%A6%B8%E0%A7%81%E0%A6%AA%E0%A6%BE%E0%A6%B0-%E0%A6%B9%E0%A7%8B%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A7%87%E0%A6%B2-%E0%A6%AC%E0%A6%BF%E0%A6%A1%E0%A6%BF%E0%A6%B0-%E0%A7%AD%E0%A6%AE-%E0%A6%B6%E0%A6%BE%E0%A6%96%E0%A6%BE/" target="_blank">
+              <img class="media2"src="img/media/janakantho.jpg" alt="">
+              <h5>The Daily Janakantha</h5></a>
+          </div>
+          <div class="col-md-2 col-sm-2 col-6">
+              <a href="">
+              <img class="media2" src="img/media/jago.png" alt="">
+              <h5>Jago News 24</h5></a>
+          </div>
+          <div class="col-md-2 col-sm-2 col-6">
+              <a href="https://www.bangladeshtoday.net/%E0%A6%9B%E0%A6%BE%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%AC%E0%A6%BE%E0%A6%B8-%E0%A6%B8%E0%A6%82%E0%A6%95%E0%A6%9F-%E0%A6%AE%E0%A7%8B%E0%A6%95%E0%A6%BE%E0%A6%AC%E0%A7%87%E0%A6%B2%E0%A6%BE%E0%A7%9F/" target="_blank">
+              <img class="media2" src="img/media/bdtoday.png" alt="">
+              <h5>Bangladesh Today</h5></a>
+          </div>
+          <div class="col-md-2 col-sm-2 col-6">
+              <a href="" target="_blank">
+              <img class="media2" src="img/media/fm.jpg" alt="">
+              <h5>96.4 Special FM</h5></a>
+          </div>
+          <div class="col-md-2 col-sm-2 col-6">
+              <a href="" target="_blank">
+              <img class="media2" src="img/media/karatoa.jpg" alt="">
+              <h5>Daily Karotoa</h5></a>
+          </div>
+
+
+      </div>
+  </div>
+</div>
+<!--End Media Coverage -->
+
 <!--- Footer -->
 <footer id="about">
     <div class="container padding">
