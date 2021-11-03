@@ -756,6 +756,97 @@ while($package_inf = mysqli_fetch_array($packages_info)){
 </div>
 <!-- branches end -->
 
+<!-- hidden gallary -->
+<div class="collapse" id="emoji">
+
+    <div class="container my-4" style="max-width:70%">
+
+        <!--Carousel Wrapper-->
+        <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+        <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+
+                <!--First slide-->
+                <div class="carousel-item active">
+
+                    <div class="row">
+                        <div class="col-md-2 col-4">
+                            <img src="img/br3/9.jpg" alt="">
+                        </div>
+
+                        <div class="col-md-2 col-4">
+                            <img src="img/br3/10.jpg" alt="">
+                        </div>
+
+                        <div class="col-md-2 col-4">
+                            <img src="img/br3/11.jpg" alt="">
+                        </div>
+
+                        <div class="col-md-2 col-4">
+                            <img src="img/br3/12.jpg" alt="">
+                        </div>
+
+                        <div class="col-md-2 col-4">
+                            <img src="img/br3/13.jpg" alt="">
+                        </div>
+
+                        <div class="col-md-2 col-4">
+                            <img src="img/br3/14.jpg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                <!--/.First slide-->
+
+                <!--Second slide-->
+                <div class="carousel-item">
+
+                    <div class="row">
+                        <div class="col-md-2 col-4">
+                            <img src="img/br3/15.jpg" alt="">
+                        </div>
+                        <div class="col-md-2 col-4">
+                            <img src="img/br3/16.jpg" alt="">
+                        </div>
+                        <div class="col-md-2 col-4">
+                            <img src="img/br3/17.jpg" alt="">
+                        </div>
+                        <div class="col-md-2 col-4">
+                            <img src="img/br3/18.jpg" alt="">
+                        </div>
+                        <div class="col-md-2 col-4">
+                            <img src="img/br3/19.jpg" alt="">
+                        </div>
+                        <div class="col-md-2 col-4">
+                            <img src="img/br3/20.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+                <!--/.Second slide-->
+
+
+
+            </div>
+            <!--/.Slides-->
+
+            <!--Controls-->
+            <div class="controls-top">
+            <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left" id="icond"></i></a>
+            <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right" id="icond"></i></a>
+            </div>
+            <!--/.Controls-->
+
+        </div>
+        <!--/.Carousel Wrapper-->
+
+
+    </div>
+</div>
+<!-- end hidden gallary -->
+
 <!--- Footer -->
 <footer id="about">
     <div class="container padding">
