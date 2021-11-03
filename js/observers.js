@@ -79,3 +79,93 @@ function closepop(){
   document.getElementById("fixtop5").style.zIndex = -1;
   // document.getElementById("fixtop1").style.opacity = .4;
 }
+$(document).on('click', 'label', function(){
+  $(this).addClass('active').siblings().removeClass('active');
+});
+
+$(document).on('click', 'li', function(){
+  $(this).addClass('active').siblings().removeClass('active');
+});
+
+$(document).on('click', 'btn-book', function(){
+  $(this).addClass('active').siblings().removeClass('active');
+});
+
+
+// $('button.branch').click(function(){
+//   $("button.package").hide();
+//   $("button.calc").hide();
+//   $("#calcc").hide();
+//     let branch_id = $(this).attr('value') ;
+//   $.ajax(
+//         {
+//             url: 'duration.php',
+//             type: 'post',
+//             data: {id: branch_id},
+//             success: function (response){
+//                 $('#duration').html(response);
+//             }
+//         }
+//     );
+//   });
+//
+//
+// $('body').on('click', 'button.duration', function() {
+//   $("button.calc").hide();
+//   let selected_branch = $('#selected_branch').val() ;
+//   let duration_id = $(this).attr('value') ;
+//   let branch_id = $(this).attr('data-value') ;
+//   $.ajax(
+//       {
+//           url: 'package.php',
+//           type: 'post',
+//           data: {
+//               d_id: duration_id,
+//               b_id: branch_id,
+//               selected_branch: selected_branch
+//           },
+//           success: function (response){
+//               $('#package').html(response);
+//
+//           }
+//       }
+//   );
+// });
+// $('body').on('click', 'button.package', function() {
+//   let selected_branch2 = $('#selected_branch2').val() ;
+//   let package_category_id = $(this).attr('value') ;
+//   $.ajax(
+//       {
+//           url: 'package_name.php',
+//           type: 'post',
+//           data: {
+//               package_category_id: package_category_id,
+//               selected_branch2: selected_branch2
+//           },
+//           success: function (response){
+//               $('#packageName').html(response);
+//
+//           }
+//       }
+//   );
+// });
+// $('body').on('click', 'button.calc', function() {
+//   let selected_branch3 = $('#selected_branch3').val() ;
+//   let p_id = $('#p_id').val() ;
+//   let package_name = $(this).attr('value') ;
+//   $.ajax(
+//       {
+//           url: 'calc.php',
+//           type: 'post',
+//           data: {
+//               package_name: package_name,
+//               selected_branch3: selected_branch3,
+//               p_id: p_id
+//           },
+//           success: function (response){
+//               $('#calcDetails').html(response);
+//
+//           }
+//       }
+//   );
+// });
