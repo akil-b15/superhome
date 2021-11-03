@@ -704,6 +704,58 @@ while($package_inf = mysqli_fetch_array($packages_info)){
 </div>
 <!--End Media Coverage -->
 
+<!---BRANCHES -->
+<div class="container-fluid" id="branches">
+	<div class="row welcome text-center fade-in">
+		<div class="col-12">
+			<h1 class="display-4">OUR BRANCHES</h1>
+		</div>
+
+	</div>
+  <div class="row fade-in justify-content-center">
+    <div class="col-md-2">
+
+    </div>
+      <div class="row col-md-8">
+        <?php
+            while($results = mysqli_fetch_array($raw_results)){
+        ?>
+        <div class="col-md-4 text-center">
+            <div class="card h-100" style="border-radius:3%">
+                <img class="card-img-top feature-img"  style="border-radius:3% 3% 0% 0%; height: 180px;" src="img/br3/<?php echo $results['background']; ?>" alt="Card image" >
+                <div class="card-body" style="padding:.6rem">
+                    <h5 class="card-title" style="font-size:120%;margin-bottom: 0rem;">
+                        <?php  echo "<p style='margin-bottom: 0rem'>".$results['name']."</p>" ; ?>
+                    </h5>
+                    <div class="row" style="text-align: center">
+                        <div class="col-3"><i class="fa fa-map-marker" style="font-size:48px;color:#afb42b;transform: scale(1);padding-left:10px"></i></div>
+                        <div class="col-9"><a align="justify"> <?php  echo "<h5 style='font-size:75%'>".$results['location']."</h6>" ; ?> </a></div>
+                        <!-- <div style="position:absolute; bottom:15px;left:0;right:0"><a class="branbtn" style="background:#afb42b; color:#fafafa" href="branches.php?id=<!?php  echo $results['id'] ; ?>" style="font-weight:bold;text-transform: unset;letter-spacing: 0px;"> Take A Tour </a><br></div> -->
+
+                    </div>
+                    <!-- <div><a href="branches.php?id=<!?php  echo $results['id'] ; ?>" style="position:absolute; bottom:0px;left:0;right:0;font-weight:bold;text-transform: unset;letter-spacing: 0px;"><div class="btn" style="background:#d4e157;width:100%"> Take A Tour</div> </a><br></div> -->
+                    <a class="manual-btn" href="branches.php?id=<?php  echo $results['id'] ; ?>" style="position:absolute; bottom:2px;right:2%; font-size:.7rem">Take a tour</a>
+                </div>
+            </div>
+        </div>
+        <?php
+
+            };
+
+          CloseCon($conn);
+
+        ?>
+      </div>
+      <div class="col-md-2">
+
+      </div>
+  </div>
+  <div class="row justify-content-center">
+    <button class="button1 fade-in mt-4 mb-4" data-toggle="collapse" data-target="#emoji">View Galary <i class="fas fa-angle-double-down"></i></button>
+  </div>
+</div>
+<!-- branches end -->
+
 <!--- Footer -->
 <footer id="about">
     <div class="container padding">
