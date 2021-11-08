@@ -847,6 +847,22 @@ while($package_inf = mysqli_fetch_array($packages_info)){
 </div>
 <!-- end hidden gallary -->
 
+<!--- Connect for mobile-->
+<div class="container hides" id="connect">
+	<div class="row text-center padding">
+		<div class="col-12 fade-in">
+			<h2>Connect</h2>
+		</div>
+		<div class="col-12 social padding fade-in">
+			<a href="https://www.facebook.com/superhomebd/" target="_blank"><i class="fab fa-facebook"></i></a>
+			<a href="https://twitter.com/superhomebd" target="_blank"><i class="fab fa-twitter"></i></a>
+			<a href="https://www.youtube.com/channel/UCjWLCmbZ8_Pv4siYr4doN0A" target="_blank"><i class="fab fa-youtube"></i></a>
+			<a href="https://www.instagram.com/superhomebd/" target="_blank"><i class="fab fa-instagram"></i></a>
+		</div>
+	</div>
+</div>
+<!--- end Connect for mobile-->
+
 <!--- Footer -->
 <footer id="about">
     <div class="container padding">
