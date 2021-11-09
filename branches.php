@@ -45,7 +45,22 @@
                                           </div>
                                           <div id="selected_dropdown" style="display: none;" class="col-md-9">
                                           </div>
-                                          
+                                          <div class="col-md-9" id="hide_dropdown">
+                                            <?php
+                                            while($branchs = mysqli_fetch_array($branches)){
+                                            ?>
+                                            <button type="button" id="branch_btn" class="button branch" value="<?php echo $branchs['branch_id'] ; ?>"><small><?php echo $branchs['branch_name'] ; ?></small><br>
+                                                <?php
+                                                    $branchLocal = '';
+                                                    if(strtolower($branchs['branch_name']) === 'super home 4'){
+                                                        $branchLocal = $branchs['branch_location'].' (Female)';
+                                                    }else{
+                                                        $branchLocal = $branchs['branch_location'] .' (Male)';
+                                                    }
+                                                    echo $branchLocal;
+                                                    ?></button>
+                                                  <?php  }?>
+                                          </div>
                                       </div>
                                       <div class="row" id="package">
 
