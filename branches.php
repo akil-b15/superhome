@@ -37,7 +37,23 @@
                       <div class="row">
                           <div class="col-md-7">
                               <div class="card">
-                                  
+                                  <div class="card-body">
+                                      <div class="row" id="branchName">
+                                          <div class="col-md-3">
+                                              <label style="float: left;" for="exampleInputEmail1"><h4>Branches</h4></label>
+                                              <div id="selected_dropdown_toggle" style="float: right; display: none;"><i class="fa fa-bars" aria-hidden="true"></i></div>
+                                          </div>
+                                          <div id="selected_dropdown" style="display: none;" class="col-md-9">
+                                          </div>
+                                          
+                                      </div>
+                                      <div class="row" id="package">
+
+                                      </div>
+                                      <div class="row" id="packageName">
+
+                                      </div>
+                                  </div>
                               </div>
                           </div>
                           <div class="col-md-5">
