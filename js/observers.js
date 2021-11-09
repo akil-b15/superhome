@@ -193,3 +193,15 @@ function myFunction() {
   var popup = document.getElementById("myPopup");
   popup.classList.toggle("show");
 }
+
+function view_modal0(close = ''){
+  if(close != ''){
+    $("#modal-container.view_modal0").removeClass('unfolding');
+    $("#modal-container.view_modal0").addClass('unfolding out');
+    // $("body").css("overflow","scroll");
+  }else{
+    $("#modal-container.view_modal0").removeClass('unfolding out');
+    $("#modal-container.view_modal0").addClass('unfolding');
+    // $("body").css("overflow","hidden");
+  }
+}
