@@ -205,3 +205,16 @@ function view_modal0(close = ''){
     // $("body").css("overflow","hidden");
   }
 }
+
+//-------------- img galary ----------
+
+
+$(document).ready(function () {
+
+});
+$(document).ready(function () {
+  $('.thumb a').on('click', function (e) {
+      e.preventDefault();
+      $('.imgBox img').attr("src", $(this).attr("href"));
+  })
+});
