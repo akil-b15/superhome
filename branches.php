@@ -27,6 +27,28 @@
           $branches = mysqli_query($conn,"SELECT * FROM branches") or die(mysql_error());
 
       ?>
+      <div id="mySidebar" class="sidebar" style="z-index:6">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="z-index:1">&times;</a>
+          <div class="container-fluid">
+            <div class="container-fluid pt-5">
+                  <form action="prebook_form.php" method="post">
+                      <input type="hidden" name="from_pkg_pln">
+
+                      <div class="row">
+                          <div class="col-md-7">
+                              <div class="card">
+                                  
+                              </div>
+                          </div>
+                          <div class="col-md-5">
+                              <div class="form-group" id="packageDetails">
+                              </div>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
     </div>
   </body>
 </html>
