@@ -89,6 +89,42 @@
               <a href="https://www.instagram.com/superhomebd/" target="_blank"><i class="fab fa-instagram" style="font-size:28px;;padding-top:30px;padding-bottom:30px"></i></i><p></p></a>
           </h6>
       </div>
+      <div class="wrapper">
+
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+
+
+            <ul class="active fix transft" id="sidebarCollapses">
+                <!-- <p>Dummy Heading</p> -->
+                <li >
+                    <img src="img/home/logo.png" style="width:110px;margin-left:30%;background:#e6ee9c;padding:10px;border-radius:10px" class="mb-3 mt-3 "alt="">
+
+                </li>
+                <li>
+                    <a href="index.php">Home</a>
+
+                </li>
+                <li>
+                    <a href="#galary">Galary</a>
+                </li>
+                <li>
+                    <a href="#facilities">Facilities</a>
+
+                </li>
+                <li>
+                    <a href="#address">Address</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+                <li>
+                    <a href="#" onclick="openNav()">Booking</a>
+                </li>
+            </ul>
+
+        </nav>
+      </div>
     </div>
   </body>
 </html>
