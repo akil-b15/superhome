@@ -124,6 +124,16 @@
             </ul>
 
         </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+          <!-- sidebarToggle for phone -->
+          <div class="container-fluid side-menu fix" >
+              <button type="button" id="sidebarCollapse" class="btn" style="background:#c0ca33;color:#fafafa">
+                  <i class="fas fa-align-left"></i>
+              </button>
+          </div>
+        </div>
       </div>
     </div>
   </body>
