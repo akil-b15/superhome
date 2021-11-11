@@ -135,6 +135,57 @@
           </div>
         </div>
       </div>
+
+        <!-- jQuery CDN - Slim version (=without AJAX) -->
+        <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> -->
+        <!-- Popper.JS -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script> -->
+        <!-- Bootstrap JS -->
+        <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script> -->
+
+        <script>
+          function myFunction(x) {
+              if (x.matches) { // If media query matches
+                  $('#sidebarCollapse').on('click', function () {
+              $('#sidebar').toggleClass('active');
+              });
+              $('#sidebarCollapses').on('click', function () {
+                  $('#sidebar').toggleClass('active');
+              });
+              } else {
+
+              }
+          }
+
+          var x = window.matchMedia("(max-width: 576px)")
+          myFunction(x) // Call listener function at run time
+          x.addListener(myFunction) // Attach listener function on state changes
+          </script>
+
+      <!-------------JS----------->
+
+      <script>
+          $(document).scroll(function() {
+
+          myID = document.getElementById("fixtop4");
+
+          var myScrollFunc = function () {
+              var y = window.scrollY;
+              if (y >= 700) {
+                  myID.className = "fixtop4 showss text-center polaroid";
+                  // myID2.className = "fixtop2 showff text-center";
+              } else {
+                  myID.className = "fixtop4 hidess text-center polaroid";
+                  // myID2.className = "fixtop2 hideff text-center";
+              }
+          };
+
+          window.addEventListener("scroll", myScrollFunc);
+          });
+      </script>
+      <script src="js/observers.js">
+
+      </script>
     </div>
   </body>
 </html>
