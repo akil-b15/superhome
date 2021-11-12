@@ -207,6 +207,18 @@
                 <?php } ?>
 
               <div class="margin"></div>
+
+
+              <!---Welcome -->
+              <div class="container ">
+                <div class="row welcome text-center mb-4">
+                  <div class="col-12 mt-3">
+                      <h2><?php  echo "Welcome to ".$results['name']."" ; ?></h2>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <!-- END Welcome -->
             </div>
           </div>
         </div>
