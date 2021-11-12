@@ -133,34 +133,110 @@
                   <i class="fas fa-align-left"></i>
               </button>
           </div>
+
+          <!-- Page content wrapper-->
+          <div>
+            <div class="container-fluid" id="home" style="margin-top:-50px">
+              <div class="margin"></div>
+                <?php
+                while($results = mysqli_fetch_array($raw_results)){
+                    if($branch==1){
+                ?>
+                <section class="parallax">
+                    <!-- <div class="parallax-inner">
+                    <a target="_blank">
+                        <button type="button" class="btn bookbr btn-lg fade-in" onclick="openNav()" style="left:50%;top:40%">BOOKING</button>
+                    </a>
+                    <!?php  echo "<h1>".$results['name']."</h1>" ; ?>
+                    </div> -->
+                </section>
+                <?php }elseif($branch==2){ ?>
+                <section class="parallax2">
+                    <!-- <div class="parallax2-inner">
+                    <a target="_blank">
+                        <button type="button" class="btn bookbr btn-lg fade-in" onclick="openNav()" style="left:50%;top:40%">BOOKING</button>
+                    </a>
+                    <!?php  echo "<h1>".$results['name']."</h1>" ; ?>
+                    </div> -->
+                </section>
+                <?php }elseif($branch==3){ ?>
+                <section class="parallax3">
+                    <!-- <div class="parallax3-inner">
+                    <a target="_blank">
+                        <button type="button" class="btn bookbr btn-lg fade-in" onclick="openNav()" style="left:50%;top:40%">BOOKING</button>
+                    </a>
+                    <!?php  echo "<h1>".$results['name']."</h1>" ; ?>
+                    </div> -->
+                </section>
+                <?php }elseif($branch==4){ ?>
+                <section class="parallax4">
+                    <!-- <div class="parallax4-inner">
+                    <a target="_blank">
+                        <button type="button" class="btn bookbr btn-lg fade-in" onclick="openNav()" style="left:50%;top:40%">BOOKING</button>
+                    </a>
+                    <!?php  echo "<h1>".$results['name']."</h1>" ; ?>
+                    </div> -->
+                </section>
+                <?php }elseif($branch==5){ ?>
+                <section class="parallax5">
+                    <!-- <div class="parallax5-inner">
+                    <a target="_blank">
+                        <button type="button" class="btn bookbr btn-lg fade-in" onclick="openNav()" style="left:50%;top:40%">BOOKING</button>
+                    </a>
+                    <!?php  echo "<h1>".$results['name']."</h1>" ; ?>
+                    </div> -->
+                </section>
+                <?php }elseif($branch==6){ ?>
+                <section class="parallax6">
+                    <!-- <div class="parallax6-inner">
+                    <a target="_blank">
+                        <button type="button" class="btn bookbr btn-lg fade-in" onclick="openNav()" style="left:50%;top:40%">BOOKING</button>
+                    </a>
+                    <!?php  echo "<h1>".$results['name']."</h1>" ; ?>
+                    </div> -->
+                </section>
+                <?php }else{ ?>
+                <section class="parallax">
+                    <!-- <div class="parallax-inner">
+                    <a target="_blank">
+                        <button type="button" class="btn bookbr btn-lg fade-in" onclick="openNav()" style="left:50%;top:40%">BOOKING</button>
+                    </a>
+                    <!?php  echo "<h1>".$results['names']."</h1>" ; ?>
+                    </div> -->
+                </section>
+                <?php } ?>
+
+              <div class="margin"></div>
+            </div>
+          </div>
         </div>
       </div>
 
-        <!-- jQuery CDN - Slim version (=without AJAX) -->
-        <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> -->
-        <!-- Popper.JS -->
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script> -->
-        <!-- Bootstrap JS -->
-        <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script> -->
+      <!-- jQuery CDN - Slim version (=without AJAX) -->
+      <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> -->
+      <!-- Popper.JS -->
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script> -->
+      <!-- Bootstrap JS -->
+      <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script> -->
 
-        <script>
-          function myFunction(x) {
-              if (x.matches) { // If media query matches
-                  $('#sidebarCollapse').on('click', function () {
-              $('#sidebar').toggleClass('active');
-              });
-              $('#sidebarCollapses').on('click', function () {
-                  $('#sidebar').toggleClass('active');
-              });
-              } else {
+      <script>
+        function myFunction(x) {
+            if (x.matches) { // If media query matches
+                $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').toggleClass('active');
+            });
+            $('#sidebarCollapses').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+            } else {
 
-              }
-          }
+            }
+        }
 
-          var x = window.matchMedia("(max-width: 576px)")
-          myFunction(x) // Call listener function at run time
-          x.addListener(myFunction) // Attach listener function on state changes
-          </script>
+        var x = window.matchMedia("(max-width: 576px)")
+        myFunction(x) // Call listener function at run time
+        x.addListener(myFunction) // Attach listener function on state changes
+        </script>
 
       <!-------------JS----------->
 
