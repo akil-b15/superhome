@@ -219,6 +219,15 @@
               </div>
               <hr>
               <!-- END Welcome -->
+
+              <!-- Photo Galary -->
+              <div class="container" id="galary">
+                  <div class="row welcome text-center">
+                      <div class="col-12 mt-3">
+                          <h3><?php  echo "".$results['place']." Branch Photo Galary" ; ?></h3>
+                      </div>
+                  </div>
+              </div>
             </div>
           </div>
         </div>
