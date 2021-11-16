@@ -228,6 +228,101 @@
                       </div>
                   </div>
               </div>
+
+              <div class="container">
+                  <div class="col-12">
+                      <div class="col-12 imgBox">
+                          <div class="row thumb justify-content-center">
+                              <?php
+                              $sqls = "SELECT * FROM images WHERE branch_id=$branch LIMIT 1";
+                              $result = mysqli_query($conn,$sqls);
+                              if(mysqli_num_rows($result)>0){
+                              while($fetch = mysqli_fetch_assoc($result)){
+                              ?>
+
+                                  <img src="upload/<?php echo $fetch['image']; ?>" class="img-size">
+
+                              <?php
+                              }
+                              }
+                              ?>
+
+                          </div>
+                      </div>
+                      <!-- SLIDE -->
+                      <div class="container my-4">
+
+                          <!--Carousel Wrapper-->
+                          <div id="multi-item-example" class="carousel slide carousel-multi-item" data-interval="false">
+
+                              <!--Slides-->
+                              <div class="carousel-inner" role="listbox">
+
+                                  <!--First slide-->
+                                  <div class="carousel-item active">
+
+                                      <div class="row thumb">
+                                          <?php
+                                          $sqls = "SELECT * FROM images WHERE branch_id=$branch LIMIT 0,12";
+                                          $result = mysqli_query($conn,$sqls);
+                                          if(mysqli_num_rows($result)>0){
+                                          while($fetch = mysqli_fetch_assoc($result)){
+                                          ?>
+                                          <div class="col-md-2 col-4" style="max-height: 130px">
+                                              <a href="upload/<?php echo $fetch['image']; ?>" target=".imgBox"><img src="upload/<?php echo $fetch['image']; ?>" alt=""></a>
+                                          </div>
+                                          <!-- <img src="upload/<!?php echo $fetch['image']; ?>" width=80 height=80>     -->
+                                          <?php
+                                          }
+                                          }
+                                          ?>
+
+                                      </div>
+
+                                  </div>
+                                  <!--/.First slide-->
+
+                                  <!--Second slide-->
+                                  <div class="carousel-item">
+
+                                      <div class="row thumb">
+                                          <?php
+                                          $sqls = "SELECT * FROM images WHERE branch_id=$branch LIMIT 12,12";
+                                          $result = mysqli_query($conn,$sqls);
+                                          if(mysqli_num_rows($result)>0){
+                                          while($fetch = mysqli_fetch_assoc($result)){
+                                          ?>
+                                          <div class="col-md-2 col-4">
+                                              <a href="upload/<?php echo $fetch['image']; ?>" target=".imgBox"><img src="upload/<?php echo $fetch['image']; ?>" alt=""></a>
+                                          </div>
+                                          <!-- <img src="upload/<!?php echo $fetch['image']; ?>" width=80 height=80>     -->
+                                          <?php
+                                          }
+                                          }
+                                          ?>
+                                      </div>
+
+                                  </div>
+                                  <!--/.Second slide-->
+
+                              </div>
+                              <!--/.Slides-->
+
+                              <!--Controls-->
+                              <div class="controls-top">
+                                  <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left" id="icond"></i></a>
+                                  <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right" id="icond"></i></a>
+                              </div>
+                              <!--/.Controls-->
+
+                          </div>
+                          <!--/.Carousel Wrapper-->
+                      </div>
+                      <!-- END SLIDE -->
+                      <!-- VIDEO -->
+                      
+                  </div>
+              </div>
             </div>
           </div>
         </div>
