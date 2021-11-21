@@ -218,3 +218,178 @@ $(document).ready(function () {
       $('.imgBox img').attr("src", $(this).attr("href"));
   })
 });
+
+
+
+
+// ---------------------------------------------------------------booking js---------------------------------------------------------------------------------------------
+
+var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+var yyyy = today.getFullYear();
+var pdate = '35';
+var rdays = dd;
+ndate = yyyy + '/' + mm + '/' + dd;
+$('button.branch').click(function(){
+    $(this).parent().find('.selected').removeClass('selected');
+    $(this).addClass('selected');
+    $('hr.branch').remove();
+    $('hr.pkg').remove();
+    $( this ).parent().parent().after( "<hr class='solid branch'>" );
+    $('hr.divide').addClass('solid');
+    $('#packageName').empty();
+    $('#packageDetails').empty();
+    let branch_id = $(this).attr('value');
+	if(screen.width < 768){
+		$('#selected_dropdown').html( '<div class="button branch selected">' + $(this).html() + '</div>');
+		$('#selected_dropdown').show();
+		$('#hide_dropdown').addClass('hide_dropdown_menu');
+		$('#selected_dropdown_toggle').show();
+	}
+	$.ajax(
+        {
+            url: 'package_plan/fetch_branch_package.php',
+            type: 'post',
+            data: {branch_id: branch_id},
+            success: function (response){
+                $('#package').html(response);
+                money_manage_ment_pkn_pln();
+            }
+        }
+    );
+});
+$('#selected_dropdown_toggle').click(function(){
+	$('#selected_dropdown').hide();
+	$('#selected_dropdown_toggle').hide();
+	$('#hide_dropdown').removeClass('hide_dropdown_menu');
+});
+
+$('body').on('click', 'button.package', function() {
+    $(this).parent().find('.selected').removeClass('selected');
+    $(this).addClass('selected');
+    $('hr.pkg').remove();
+    $( this ).parent().parent().after( "<hr class='solid pkg'>" );
+    $('#packageDetails').empty();
+    let branch_id = $('#selectedBranchId').attr('value');
+    let package_category_id = $(this).attr('value') ;
+    let package_name = $(this).html() ;
+	if(screen.width < 768){
+		$('#pkg_ctg_dropdown').html( '<div class="button branch selected">' + $(this).html() + '</div>');
+		$('#pkg_ctg_dropdown').show();
+		$('#hide_pkg_ctg_dropdown').addClass('hide_dropdown_menu');
+		$('#pkg_ctg_dropdown_toggle').show();
+	}
+    $.ajax(
+        {
+            url: 'package_plan/fetch_package_details.php',
+            type: 'post',
+            data: {
+                package_category_id: package_category_id,
+                branch_id: branch_id
+            },
+            success: function (response){
+                $('#packageName').html(response);
+				show_modal(package_name);
+                money_manage_ment_pkn_pln();
+            }
+        }
+    );
+});
+
+function pkg_dropdown_hide(){
+	$('#pkg_ctg_dropdown').hide();
+	$('#pkg_ctg_dropdown_toggle').hide();
+	$('#hide_pkg_ctg_dropdown').removeClass('hide_dropdown_menu');
+};
+
+$('body').on('click', 'button.packageName', function() {
+    $(this).parent().find('.selected').removeClass('selected');
+    $(this).addClass('selected');
+    let branch_id = $('#selectedBranchId').attr('value');
+    let package_category_id = $('#selectedPackageId').attr('value');
+    let package_name = $(this).attr('value') ;
+	if(screen.width < 768){
+		$('#pkg_name_dropdown').html( '<div class="button branch selected">' + $(this).html() + '</div>');
+		$('#pkg_name_dropdown').show();
+		$('#hide_pkg_name_dropdown').addClass('hide_dropdown_menu');
+		$('#pkg_name_dropdown_toggle').show();
+	}
+    $.ajax(
+        {
+            url: 'package_plan/fetch_package_expenses.php',
+            type: 'post',
+            data: {
+                package_category_id: package_category_id,
+                branch_id: branch_id,
+                package_name: package_name
+            },
+            success: function (response){
+                $('#packageDetails').html(response);
+                money_manage_ment_pkn_pln();
+            }
+        }
+    );
+});
+
+function pkg_name_dropdown_hide(){
+	$('#pkg_name_dropdown').hide();
+	$('#pkg_name_dropdown_toggle').hide();
+	$('#hide_pkg_name_dropdown').removeClass('hide_dropdown_menu');
+};
+
+function date_append(date){
+    let date_set = document.getElementById('date_set').getAttribute('value');
+    if(date_set === 'not set'){
+        let _href = document.getElementById('check_date').getAttribute('href');
+        document.getElementById('check_date').setAttribute('href',_href+'/'+date);
+        document.getElementById('date_set').setAttribute('value', 'set');
+    }else{
+        let _href = document.getElementById('check_date').getAttribute('href');
+        _href = _href.slice(0,_href.length - 11);
+        document.getElementById('check_date').setAttribute('href',_href+'/'+date);
+    }
+	money_manage_ment_pkn_pln();
+}
+
+$('body').on('click', '#parking_yes', function (){
+    // console.log($('#vicle_parking').val());
+    $('#vicle_parking').val(1);
+    $('#parking_amount').show();
+});
+
+
+$('body').on('click', '#parking_no', function (){
+    $('#vicle_parking').val(0);
+    $('#parking_amount').hide();
+});
+
+$('body').on('click', '#locker_yes', function (){
+    $('#locker_type_show').show();
+});
+
+$('body').on('click', '#locker_no', function (){
+    $('#locker_type_show').hide();
+});
+
+$('body').on('click', '#payment_full', function (){
+    $('#payment_pattern').val(1);
+});
+
+$('body').on('click', '#payment_half', function (){
+    $('#payment_pattern').val(0);
+});
+$('body').on('click', "input[type='radio']", function(){
+    var locker_type = $("input[name='locker_type']:checked").val();
+    $.ajax({
+        url: 'package_plan/fetch_locker_expenses.php',
+        type: 'post',
+        data: {
+            locker_type: locker_type,
+        },
+        success: function (response){
+            $('#locker_price').html(response);
+            money_manage_ment_pkn_pln();
+        }
+    });
+});
