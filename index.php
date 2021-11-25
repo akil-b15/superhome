@@ -863,6 +863,43 @@ while($package_inf = mysqli_fetch_array($packages_info)){
 </div>
 <!--- end Connect for mobile-->
 
+<!-- Feedback FORM -->
+<div class="container padding fade-in" id="contact">
+    <div class="row col-md-12 contact-info justify-content-center">
+    <div class="row col-md-6 col-12 justify-content-center">
+        <div class="form-group col-md-6 name-field">
+            <input type="text" name="name" id="contact-name" class="form-control" required="required" placeholder="Name">
+        </div>
+        <div class="form-group col-md-6 email-field">
+            <input type="text" name="mobile" class="form-control" id="contact-mobile" required="required" placeholder="Mobile Number">
+        </div>
+        <div class="form-group col-md-12 email-field">
+            <input type="email" name="email" class="form-control stp" id="contact-email" required="required" placeholder="Email Id">
+        </div>
+        <div class="form-group col-md-12">
+            <textarea name="message" id="message" required="required" class="form-control stpp" rows="8" placeholder="Your Text"></textarea>
+        </div>
+        <div class="row justify-content-center">
+            <button class="button">Submit</button>
+        </div>
+    </div>
+    <div class="col-md-6 text-center">
+        <h2 style="padding:10px;color:#4a4309">Our Contact Information</h2>
+        <h5 style="color:#4a4309">
+            <p><i class="fa fa-phone" style="color:#afb42b"></i> Phone: +8809638666333</p>
+            <p><i class="fa fa-envelope" style="color:#afb42b"></i> Email: sales@superhomebd.com</p>
+        </h5>
+        <h2 style="padding:10px;color:#4a4309">Business Hours</h2>
+        <h5 style="color:#4a4309">
+            <p><i class="fa fa-clock-o" style="color:#afb42b"></i> Mon. - Sun. 8am to 7pm</p>
+            <p><i class="fa fa-clock-o" style="color:#afb42b"></i> Open All day</p>
+        </h5>
+    </div>
+    </div>
+
+</div>
+<!-- End Feedback Form -->
+
 <!--- Footer -->
 <footer id="about">
     <div class="container padding">
