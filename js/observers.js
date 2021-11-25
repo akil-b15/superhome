@@ -393,3 +393,84 @@ $('body').on('click', "input[type='radio']", function(){
         }
     });
 });
+
+
+// Money Management
+var getDaysInMonth = function(month,year){
+	return new Date(year, month, 0).getDate();
+};
+
+function select_date(){
+	$('#totalAmountBeforeDate').hide();
+	$('#totalAmount').show();
+	$('#total_amount_disclaimer').show();
+	money_manage_ment_pkn_pln();
+}
+
+
+function money_manage_ment_pkn_pln(){
+    console.log('working');
+    console.log(ndate);
+	if($("#try_us_condition_check").val() == '1' ){
+		if(ndate == $("#checkin_date").val()){
+            console.log('on first if');
+			$("#check_in_purpose").css({"display":"block"});
+			$("#force_rent_container").css({"display":"none"});
+			$('#force_rent').prop('checked', false);
+			$('#card_number').attr('readonly', false);
+			//----------
+			if($("#vicle_parking").val() == '1' ){
+				$("#parking_purpose").css({"display":"block"});
+				var parki_val = ($('#parking_value').val());
+				var park_m = parki_val;
+				var d_p_a = parki_val;
+			}else{
+				$("#parking_purpose").css({"display":"none"});
+				var park_m = (0);
+				var d_p_a = (0);
+			}
+
+			if($("#locker_value").val() != ''){
+				var locker_m = ($("#locker_value").val());
+			}else{
+				var locker_m = (0);
+			}
+
+			if($("#disccount_money").val() != ''){
+				if($('#payment_pattern').val() == '1'){
+					var discount = ($("#disccount_money").val());
+				}else if($('#payment_pattern').val() == '0'){
+					var discount = ($("#disccount_money").val()) / 2;
+				}else{
+					var discount = ($("#disccount_money").val());
+				}
+			}else{
+				var discount = (0);
+			}
+			var m_ry = ($('#rent_amount').val());
+			if($('#payment_pattern').val() == '1'){
+				var rent_date = m_ry;
+				$("#rental_fiels_container").css({"display":"block"});
+			}else if($('#payment_pattern').val() == '0'){
+				var rent_paymnt_p = m_ry;
+				var rent_date = rent_paymnt_p / 2 + 200;
+				$("#rental_fiels_container").css({"display":"block"});
+			}else{
+				var rent_date = (0);
+				var park_m = (0);
+				var due_g_m = 1;
+				var r_d_a = m_ry;
+				$("#rental_fiels_container").css({"display":"none"});
+			}
+
+			if(rent_date > discount){
+				var f_rent_v = rent_date - discount;
+				$("#discount_text").val(formatCurrency(discount));
+				$("#disccount_money").val(discount);
+			}else{
+				var f_rent_v = rent_date;
+				$("#discount_text").val(formatCurrency(discount));
+				$("#disccount_money").val(discount); //discount
+			}
+			var security_money = ($('#security_money').val());
+			var all_total = security_money + park_m + f_rent_v + locker_m;
