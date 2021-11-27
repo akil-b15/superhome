@@ -474,3 +474,153 @@ function money_manage_ment_pkn_pln(){
 			}
 			var security_money = ($('#security_money').val());
 			var all_total = security_money + park_m + f_rent_v + locker_m;
+
+      			if(security_money > 0){
+      				$("#booking_security_amount").val(security_money);
+      				$("#parking_amount").val(formatCurrency(park_m));
+      				$('#rent_amount_show').val(formatCurrency(f_rent_v));
+      				$('#ac_rent_amount_1').val(f_rent_v);
+      				$('#total_amount_large').html(Math.round(formatCurrency(all_total)));
+      				$("#booking_total_amount").val((all_total));
+      				$("#booking_total_amount_c").val((all_total));
+      				if(due_g_m == 1){
+      					$("#booking_rent_amount").val(r_d_a);
+      					$("#booking_parking_amount").val(d_p_a);
+      				}else{
+      					$("#booking_rent_amount").val(rent_date);
+      					$("#booking_parking_amount").val(park_m);
+      				}
+      			}else{
+      				$("#booking_security_amount").val('');
+      				$('#total_amount_large').html('0.00');
+      				$("#booking_total_amount").val((0));
+      				$("#booking_total_amount_c").val((0));
+      				$('#rent_amount_show').val(0);
+      				$('#ac_rent_amount_1').val(0);
+      				$("#parking_amount").val(0);
+      				$("#booking_rent_amount").val('');
+      				$("#booking_parking_amount").val('');
+      			}
+      			//----------
+      			$("#card_number_check").val('1');
+      		}else{
+                  console.log('on first else');
+      			$("#card_number_check").val('0');
+      			$("#force_rent_container").css({"display":"flex"});
+      			// if($("#force_rent").is(':checked')){
+      				$("#check_in_purpose").css({"display":"block"});
+      				if($("#late_night_checkin").is(':checked')){
+      					$('#card_number').attr('readonly', false);
+      				}else{
+      					$('#card_number').attr('readonly', true);
+      				}
+      				//----------
+
+      				if($("input[name='parking']:checked").val() == 'yes'){
+      					$("#parking_purpose").css({"display":"block"});
+      					var parki_val = ($('#parking_value').val());
+      					var park_m = parki_val;
+      					var d_p_a = parki_val;
+      				}else{
+      					//$("#payment_pattern").html(payment_pattern_values);
+      					var park_m = (0);
+      					var d_p_a = (0);
+      				}
+
+      				if($("input[name='locker']:checked").val() == 'yes'){
+      					if(typeof $("#locker_value").val() != 'undefined'){
+      						var locker_m = ($("#locker_value").val());
+      					}else{
+      						var locker_m = (0);
+      					}
+      				}else{
+      					var locker_m = (0);
+      				}
+
+      				if($("#disccount_money").val() != ''){
+      					if($('#payment_pattern').val() == '1'){
+      						var discount = ($("#disccount_money").val());
+      					}else if($('#payment_pattern').val() == '0'){
+      						var discount = ($("#disccount_money").val()) / 2;
+      					}else{
+      						var discount = ($("#disccount_money").val());
+      					}
+      				}else{
+      					var discount = (0);
+      				}
+      				var m_ry = ($('#rent_amount').val());
+
+      				if($("input[name='payment']:checked").val() == 'full'){
+      					var rent_date = m_ry;
+      					$("#rental_fiels_container").css({"display":"block"});
+      				}else if($("input[name='payment']:checked").val() == 'half'){
+      					var rent_paymnt_p = m_ry;
+      					var rent_date = rent_paymnt_p / 2 + 200;
+      					$("#rental_fiels_container").css({"display":"block"});
+      				}else{
+      					var rent_date = (0);
+      					var park_m = (0);
+      					var due_g_m = 1;
+      					var r_d_a = m_ry;
+      					$("#rental_fiels_container").css({"display":"none"});
+      				}
+      				if(rent_date > discount){
+      					var f_rent_v = rent_date - discount;
+      					$("#discount_text").val((discount));
+      					$("#disccount_money").val(discount);
+      				}else{
+      					var f_rent_v = rent_date;
+      					$("#discount_text").val((discount));
+      					$("#disccount_money").val(discount);//discount
+      				}
+      				var security_money = ($('#security_money').val());
+      				var all_total = Number(security_money) + Number(park_m) + Number(f_rent_v) + Number(locker_m);
+                      console.log('full ' + all_total);
+                      console.log('security ' + security_money);
+                      console.log('park ' + park_m);
+                      console.log('rent ' + f_rent_v);
+                      console.log('locker ' + locker_m);
+      				if(security_money > 0){
+      					$("#booking_security_amount").val(security_money);
+      					$("#parking_amount").val((park_m));
+      					$('#rent_amount_show').val((f_rent_v));
+      					$('#ac_rent_amount_1').val(f_rent_v);
+      					$('#total_amount_large').html(Math.round(all_total));
+      					$("#booking_total_amount").val((all_total));
+      					$("#booking_total_amount_c").val((all_total));
+      					if(due_g_m == 1){
+      						$("#booking_rent_amount").val(r_d_a);
+      						$("#booking_parking_amount").val(d_p_a);
+      					}else{
+      						$("#booking_rent_amount").val(rent_date);
+      						$("#booking_parking_amount").val(park_m);
+      					}
+      				}else{
+      					$("#booking_security_amount").val('');
+      					$('#total_amount_large').html('0.00');
+      					$("#booking_total_amount").val((0));
+      					$("#booking_total_amount_c").val((0));
+      					$("#booking_rent_amount").val('');
+      					$("#booking_parking_amount").val('');
+      					$("#parking_amount").val(0);
+      					$('#rent_amount_show').val(0);
+      					$('#ac_rent_amount_1').val(0);
+      				}
+      				//----------
+      			// }else{
+      			// 	$("#check_in_purpose").css({"display":"none"});
+      			// 	var tt_aa = ($('#security_money').val());
+      			// 	$('#total_amount_large').html((tt_aa));
+      			// 	$("#booking_total_amount").val(tt_aa);
+      			// 	$("#booking_total_amount_c").val(tt_aa);
+      			// 	$("#booking_security_amount").val(tt_aa);
+      			// 	$("#booking_rent_amount").val('');
+      			// 	$("#booking_parking_amount").val('');
+      			// 	$("#parking_amount").val('');
+      			// 	$('#rent_amount_show').val('');
+      			// 	$('#ac_rent_amount_1').val('');
+      			// 	$('#card_number').attr('readonly', false);
+      			// }
+      			$("#card_number_check").val('0');
+      		}
+      	}
