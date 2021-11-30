@@ -17,6 +17,8 @@ if(isset($_POST['package_category_id'])){
   echo '<div id="pkg_name_dropdown" style="display: none;" class="col-md-9">
         </div>
         <div class="col-md-9" id="hide_pkg_name_dropdown">';
-  
+  while($branch = mysqli_fetch_assoc($result)){
+      echo '<button type="button" id="package" type="button" class="button packageName" value="'.$branch['package_name'].'" onclick="money_manage_ment_pkn_pln()">'.$branch['package_name'].'</button>';
+  }
   echo '</div>';
 }
