@@ -133,5 +133,50 @@ if(isset($_POST['package_category_id'])){
     }else{
         $html .= '<h5>Monthly Rent: </h5>';
     }
+    $html .= '</div>
+                    <div class="col-md-6">
+                    <p id="monthlyRent">TK <span>'.number_format($expense['monthly_rent']).'</span></p>
+                    </div>
+                </div>
+
+                <div id="parking_amount" style="display: none">
+                    <hr class="solid">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5>Parking Rent: </h5>
+                            <span style="color: red" class="error-page danger"></span>
+                        </div>
+                        <div class="col-md-6">
+                            <p id="parking">TK <span>'.number_format($expense['parking_amount']).'</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="locker_price">
+                </div>
+
+                <div id="full_amount">
+                    <hr class="solid">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5>Amount to Pay: </h5>';
+                            if($expense['try_us'] != 1){
+                                $html .= '<small id="total_amount_disclaimer" style="display: none" class="text-info">(Monthly Rent Calculated for the remaining days of the month!)</small>';
+                            }
+    $html .=                '<span style="color: red" class="error-page danger"></span>
+                        </div>
+                        <div class="col-md-6">
+                            <p id="totalAmountBeforeDate"><small class="text-danger">Enter Check In Date</small></p>
+                            <p id="totalAmount" style="display: none">TK <span id="total_amount_large"></span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <input type="submit" class="button book" value="Book">
+                </div>
+            </div>
+            </div>';
+    echo $html;
 //    <button class="button book">Book</button>
 }
