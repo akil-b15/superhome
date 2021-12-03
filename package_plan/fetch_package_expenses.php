@@ -88,7 +88,7 @@ if(isset($_POST['package_category_id'])){
                         </div>
                       </div>';
     }
-    // $html .= '  <hr class="solid">
+    $html .= '  <hr class="solid">
                 <div class="row">
                     <div class="col-md-6">
                         <h5>Payment: </h5>
@@ -116,6 +116,22 @@ if(isset($_POST['package_category_id'])){
                         </p>
                     </div>
                 </div>
-
+                <hr class="solid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>Discount: </h5>
+                    </div>
+                    <div class="col-md-6">
+                        <p id="discountFoot">TK <span id="discount_text">'.number_format($expense['discount_amount']).'</span></p><small class="danger">(Applicable if you are lucky.)</small>
+                    </div>
+                </div>
+                <hr class="solid">
+                <div class="row">
+                    <div class="col-md-6">';
+    if($expense['try_us'] == 1){
+        $html .= '<h5>Package Amount: </h5>';
+    }else{
+        $html .= '<h5>Monthly Rent: </h5>';
+    }
 //    <button class="button book">Book</button>
 }
