@@ -51,7 +51,43 @@ if(isset($_POST['package_category_id'])){
                       </div>
                         ';
     }
-    
+    if($lockerCount['lockerCount'] > 0){
+        $lockerResult = mysqli_query($conn,"SELECT id, locker_type_name from manage_locker WHERE branch_id = 'BAR_100920_294562129482664344_1599721915' AND uses = 0 group by locker_type_name");
+        $html .=     '<hr class="solid">
+                      <div class="row">
+                            <div class="col-md-6">
+                                <h5>Locker: </h5>
+                                <span style="color: red" class="error-page danger"></span>
+                            </div>
+                            <div class="col-md-6 parking_container">
+                                <label class="parking_label col-md-6">Yes
+                                  <input type="radio" name="locker" id="locker_yes" value="yes">
+                                  <span class="checkmark"></span>
+                                </label>
+                                <label class="parking_label col-md-6">No
+                                  <input type="radio" name="locker" checked="checked" id="locker_no" value="no">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </div>
+                      </div>
+                      <div id="locker_type_show" style="display: none">
+                        <hr class="solid">
+                        <div class="row">
+                                <div class="col-md-6">
+                                    <h5>Locker Type: </h5>
+                                    <span style="color: red" class="error-page danger"></span>
+                                </div>
+                                <div class="col-md-6 parking_container">';
+                                while($locker = mysqli_fetch_assoc($lockerResult)){
+                                    $html .= '<label class="parking_label col-md-6">'.$locker['locker_type_name'];
+                                    $html .= '<input data-target="#locker_select" data-toggle="modal" type="radio" name="locker_type" value="'.$locker['id'].'" onclick="money_manage_ment()">';
+                                    $html .= '<span class="checkmark"></span>
+                                              </label>';
+                                }
+        $html .=                '</div>
+                        </div>
+                      </div>';
+    }
 
 //    <button class="button book">Book</button>
 }
