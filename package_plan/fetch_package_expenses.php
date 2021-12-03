@@ -88,6 +88,34 @@ if(isset($_POST['package_category_id'])){
                         </div>
                       </div>';
     }
+    // $html .= '  <hr class="solid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>Payment: </h5>
+                        <span style="color: red" class="error-page danger"></span>
+                    </div>
+                    <div class="col-md-6 parking_container">
+                        <label class="parking_label col-md-6">Full
+                        <input type="radio" name="payment" id="payment_full" value="full" onchange="money_manage_ment()" checked>
+                        <span class="checkmark"></span>
+                        </label>
+                        <label class="parking_label col-md-6">Half
+                        <input type="radio" name="payment" id="payment_half" value="half">
+                        <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <hr class="solid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>Security Deposit: </h5>
+                    </div>
+                    <div class="col-md-6">
+                        <p> TK
+                            <span id="amount">'.number_format($expense['package_price']).'</span>
+                        </p>
+                    </div>
+                </div>
 
 //    <button class="button book">Book</button>
 }
