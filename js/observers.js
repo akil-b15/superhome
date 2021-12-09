@@ -623,4 +623,21 @@ function money_manage_ment_pkn_pln(){
       			// }
       			$("#card_number_check").val('0');
       		}
-      	}
+      	}else{
+      		if(ndate == $("#checkin_date").val()){
+                  console.log('on second if');
+      			$("#check_in_purpose").css({"display":"block"});
+      			$("#force_rent_container").css({"display":"none"});
+      			$('#force_rent').prop('checked', false);
+      			$('#card_number').attr('readonly', false);
+      			//---------
+      			if($("#vicle_parking").val() == '1' ){
+      				$("#parking_purpose").css({"display":"block"});
+      				var parki_val = ($('#parking_value').val());
+      				var park_m = ( parki_val / tdate ) * edate;
+      				var d_p_a = ( parki_val / tdate ) * edate;
+      			}else{
+      				$("#parking_purpose").css({"display":"none"});
+      				var park_m = (0);
+      				var d_p_a = (0);
+      			}
