@@ -715,4 +715,45 @@ function money_manage_ment_pkn_pln(){
 			}
 			//---------
 			$("#card_number_check").val('1');
-		}
+		}else{
+            console.log('on second else');
+			// if($("#force_rent").is(':checked')){
+
+
+				//---------------------------------------------
+				var n_chk_in = $("#checkin_date").val().split('-');
+				var n_days_ed = getDaysInMonth(n_chk_in[1],n_chk_in[0]);
+				var n_days_m = getDaysInMonth(n_chk_in[1],n_chk_in[0]);
+				console.log('ok');
+				console.log($("#checkin_date").val() + 'check in date');
+				console.log(parseInt(n_chk_in[2]) + n_chk_in[2] + 'check in');
+				if( parseInt(n_chk_in[2]) > n_chk_in[2]){
+					var ac_days = n_days_m - (n_chk_in[2]) + 1;
+					console.log(ac_days + ' AC days 1');
+				}else if( parseInt(n_chk_in[1]) == n_chk_in[1]){
+					var ac_days = n_days_m - (n_chk_in[2]) + 1;
+					console.log(ac_days + ' AC days 2');
+				}else if( parseInt(n_chk_in[1]) > n_chk_in[1]){
+					var number_after_d = n_chk_in[2];
+					var date_month = n_chk_in[1] + 1;
+					var number_after_n = getDaysInMonth(date_month, n_chk_in[0]);
+					var ac_days = number_after_n - number_after_d + 1;
+					console.log(ac_days + ' AC days 3');
+				}else if(parseInt(n_chk_in[0]) == n_chk_in[0]){
+					var number_after_d = n_chk_in[2];
+					var date_month = n_chk_in[1] + 1;
+					var number_after_n = getDaysInMonth(date_month , n_chk_in[0]);
+					var ac_days = number_after_n - number_after_d + 1;
+				}else if(parseInt(n_chk_in[0]) > n_chk_in[0]){
+					var number_after_d = n_chk_in[2];
+					var number_after_m = n_chk_in[1];
+					var number_after_y = n_chk_in[0];
+					var date_year = number_after_y + 1;
+					var number_after_n = getDaysInMonth(number_after_m, date_year);
+					var ac_days = number_after_n - number_after_d + 1;
+					console.log(ac_days + ' AC days 4');
+				}else{
+					var ac_days = (n_days_m) - n_chk_in[2] + 1;
+					console.log(ac_days + ' AC days 5');
+					//var ac_days = 'test not working!';
+				}
